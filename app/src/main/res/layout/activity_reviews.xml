@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_reviews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.louis.tourismghana.ReviewsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <Button
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90000000"
+            android:clickable="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reviews" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-200dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/regionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="60dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:elevation="5dp"
+                    android:text="User Reviews"
+                    android:textAlignment="center"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/title_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="5dp"
+                    android:layout_below="@+id/title"
+                    android:text="what are other users saying?"
+                    android:textAlignment="center"
+                    android:fontFamily="casual"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/reviewsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/title_sub"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    tools:targetApi="lollipop" />
+
+                <ProgressBar
+                    android:id="@+id/actionProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reviewsRecyclerView"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:visibility="invisible"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:id="@+id/noDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/actionProgress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:text="NO REVIEWS LOADED YET"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNavHeader"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+
+                <ImageView
+                    android:id="@+id/noDownLoadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/noDownload"
+                    android:src="@drawable/ic_cloud_off_black_24dp" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Switch
+                android:id="@+id/loadReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Turn ON to load Reviews"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
+

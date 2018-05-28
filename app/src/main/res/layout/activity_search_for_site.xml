@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_search_for_site"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.louis.tourismghana.SearchForSiteActivity">
+
+    <LinearLayout
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:selectableItemBackground"
+            app:contentPadding="10.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/heading_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Find tourist Sites"
+                    android:textColor="#555555"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/search_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/heading_label"
+                    android:layout_alignLeft="@+id/heading_label"
+                    android:layout_below="@+id/heading_label"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/search_layout"
+                    android:layout_toStartOf="@+id/search_Image"
+                    android:layout_toLeftOf="@+id/search_Image"
+                    android:ems="10"
+                    android:hint="Search here"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/search_Image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/search_field"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/database_search"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/search_field"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/background_light" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dashboard"
+        android:layout_marginTop="50dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:elevation="5dp"
+        android:background="@color/tabBackground"
+        android:paddingTop="5.0dip"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/database_search"
+                    android:text="SEARCH"
+                    android:textColor="@color/colorNavHeader"
+                    android:textSize="12.0sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonScanCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/qrcode_scan"
+                    android:text="SCAN SITE CODE"
+                    android:textColor="@color/colorNavHeader"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonVoice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/microphone"
+                    android:text="VOICE"
+                    android:textColor="@color/colorNavHeader"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
