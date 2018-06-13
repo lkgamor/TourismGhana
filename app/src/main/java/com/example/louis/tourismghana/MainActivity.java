@@ -32,6 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
+import android.widget.ViewFlipper;
 
 import com.example.louis.tourismghana.InfoGhanaActivity;
 import com.example.louis.tourismghana.IntroActivity;
@@ -60,7 +61,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     private Handler handler = new Handler();
     private TextToSpeech textToSpeech;
     private Button screenButton;
-    private ImageView imageView, playVideo;
+    private ImageView playVideo;
+    private ViewFlipper flipperImageView;
     private VideoView videoview;
     boolean already_launched;
     SharedPreferences.Editor editor;
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         CardView factsBtn = (CardView)findViewById(R.id.fab1);
         CardView symbolBtn = (CardView)findViewById(R.id.fab2);
         screenButton = (Button)findViewById(R.id.screen);
-        imageView = (ImageView)findViewById(R.id.siteImage);
+        flipperImageView = (ViewFlipper) findViewById(R.id.siteImage);
         videoview = (VideoView)findViewById(R.id.videoView);
         final View shadeView = findViewById(R.id.mainView);
 
@@ -270,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                     @Override
                     public void run() {
                         screenButton.setVisibility(View.VISIBLE);
-                        imageView.setVisibility(View.VISIBLE);
+                        flipperImageView.setVisibility(View.VISIBLE);
                         playVideo.setVisibility(View.VISIBLE);
                         videoview.setVisibility(View.GONE);
                     }
@@ -511,7 +513,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     public void showVideo()
     {
         screenButton.setVisibility(View.GONE);
-        imageView.setVisibility(View.GONE);
+        flipperImageView.setVisibility(View.GONE);
         playVideo.setVisibility(View.GONE);
         videoview.setVisibility(View.VISIBLE);
         String path = "android.resource://" + this.getPackageName() + "/" + R.raw.demo;
