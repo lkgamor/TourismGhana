@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_region_site_categories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.louis.tourismghana.RegionSiteCategories">
+
+    <RelativeLayout
+        android:id="@+id/helpLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:visibility="gone"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:id="@+id/touchImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_touch_app_black_24dp"/>
+
+        <TextView
+            android:id="@+id/touchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/touchImage"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/touchImage"
+            android:layout_toStartOf="@+id/touchImage"
+            android:background="@color/colorNavHeader"
+            android:padding="10dp"
+            android:text="Click icon above for more options"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

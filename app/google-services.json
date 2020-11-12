@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1027221956225",
+    "firebase_url": "https://tourism-ghana.firebaseio.com",
+    "project_id": "tourism-ghana",
+    "storage_bucket": "tourism-ghana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027221956225:android:2f52b71605aa5498",
+        "android_client_info": {
+          "package_name": "com.example.louis.tourismghana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027221956225-gtbmmn0egskvgaqtj59400q9oogmgr5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.louis.tourismghana",
+            "certificate_hash": "9c4e5b93f7d651758d6a37578ca55eed1d676189"
+          }
+        },
+        {
+          "client_id": "1027221956225-kukfi5lf2qbk2kjbaak0qtlutku3ep4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9gw5LfxAhO_ZLLtgGHlqZDv3Dmm0AF54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027221956225-kukfi5lf2qbk2kjbaak0qtlutku3ep4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

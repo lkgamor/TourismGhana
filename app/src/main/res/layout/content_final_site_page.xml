@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.louis.tourismghana.FinalSitePageActivity"
+    tools:showIn="@layout/activity_final_site_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:id="@+id/innerLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPaddingBottom="20dp"
+                        app:contentPaddingLeft="20dp"
+                        app:contentPaddingRight="20dp"
+                        app:contentPaddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:text="DESCRIPTION"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dot_active"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/siteDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:lineSpacingExtra="5dp"
+                                android:text="The description of the site goes here"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textIsSelectable="true" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/large_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPaddingBottom="20dp"
+                        app:contentPaddingLeft="20dp"
+                        app:contentPaddingRight="20dp"
+                        app:contentPaddingTop="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/relativeLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:text="Location"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dot_active"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/siteLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:text="Site location available here"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textIsSelectable="true" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/findAgent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:clickable="true"
+                                android:onClick="VIEW_MAP"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardCornerRadius="3dp"
+                                app:cardElevation="5dp"
+                                app:contentPadding="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="VIEW ON MAP"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="17sp" />
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPaddingBottom="20dp"
+                        app:contentPaddingLeft="20dp"
+                        app:contentPaddingRight="20dp"
+                        app:contentPaddingTop="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Contact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:text="Contact"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/dot_active"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/siteContact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Contact"
+                                android:gravity="center_horizontal"
+                                android:text="Site contact number goes here"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textIsSelectable="true" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/btn_Make_Payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/siteContact"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:clickable="true"
+                                android:onClick="CALL_SITE"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardCornerRadius="3dp"
+                                app:cardElevation="5dp"
+                                app:contentPadding="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="MAKE THE CALL"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="17sp" />
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btn_Read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/btn_shape"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:onClick="READ_SITE_INFO"
+                        android:padding="5dp"
+                        android:text="READ OUT"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:targetApi="lollipop" />
+
+                    <Button
+                        android:id="@+id/btn_Stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/btn_shape"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:onClick="STOP_READING"
+                        android:padding="5dp"
+                        android:text="STOP"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:targetApi="lollipop" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -113,7 +113,7 @@ public class SchedulerActivity extends AppCompatActivity implements AdapterView.
 
             count = arrayAdapter.getCount();
             if (count == 0) {
-                subTitle.setText("You have no plans at the moment");
+                subTitle.setText("You have no tour plans at the moment");
                 imageView.setVisibility(View.VISIBLE);
             } else if (count == 1) {
                 subTitle.setText("You have " + count + " tour plan");
@@ -130,7 +130,7 @@ public class SchedulerActivity extends AppCompatActivity implements AdapterView.
 
             count = arrayAdapter.getCount();
             if (count == 0) {
-                subTitle.setText("You have no plans at the moment");
+                subTitle.setText("You have no tour plans at the moment");
             } else if (count == 1) {
                 subTitle.setText("You have " + count + " tour plan");
             } else {

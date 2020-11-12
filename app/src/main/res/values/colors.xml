@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffc107</color>
+    <color name="colorPrimaryDark">#ffffa000</color>
+    <color name="colorAccent">#333333</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorNavHeader">#79000000</color>
+    <color name="colorNoBackground">#00000000</color>
+
+    <color name="backgroundcolor">#fffcfcfc</color>
+    <color name="colorpink">#ffff4081</color>
+    <color name="darkblue">#ff23283a</color>
+    <color name="deeppurple">#ff7c4dff</color>
+    <color name="green">#ff00bfa5</color>
+    <color name="lightgray">#ffededed</color>
+    <color name="pink">#fffe104d</color>
+    <color name="yellow">#ffffb300</color>
+    <color name="tabBackground">#e0e0e0</color>
+    <color name="colorYellow">#fcce00</color>
+    <color name="colorFAB9">#0f3850</color>
+    <color name="colorFAB8">#66a712</color>
+    <color name="callHotelTxtColor">#fff</color>
+    <color name="colorFAB1">#986ee9</color>
+    <color name="colorFAB2">#de80ed</color>
+    <color name="colorFAB3">#ec8b3c</color>
+    <color name="colorFAB4">#f25f45</color>
+    <color name="colorFAB5">#e4d144</color>
+    <color name="colorFAB6">#709c6f</color>
+    <color name="colorFAB7">#6f7a9c</color>
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+    <color name="colorPrimaryBookMark">#ad98d6</color>
+    <color name="colorPrimaryX">#4169e1</color>
+    <!--<color name="colorPrimaryDark">#2756e2</color>-->
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+    <color name="myColor">#9c000000</color>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.louis.tourismghana">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntroActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Welcome to Ghana"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RegionsActivity"
+            android:label="Regions in Ghana" />
+        <activity
+            android:name=".InfoGhanaActivity"
+            android:label="@string/title_activity_info_ghana"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegionSiteCategories" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:label="Your Feedbacks" />
+        <activity
+            android:name=".SectionsActivity"
+            android:label="Tourist Attractions" />
+        <activity
+            android:name=".FinalGhanaInfoActivity"
+            android:label="Symbol Information" />
+        <activity android:name=".HotelsActivity" />
+        <activity android:name=".FinalHotelActivity" />
+        <activity
+            android:name=".FinalSitePageActivity"
+            android:label="@string/title_activity_final_site_page"
+            android:parentActivityName=".SectionsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.louis.tourismghana.SectionsActivity" />
+        </activity>
+        <activity
+            android:name=".SiteMapActivity"
+            android:label="@string/title_activity_site_map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.louis.tourismghana.FinalSitePageActivity" />
+        </activity>
+        <activity
+            android:name=".FeedBackResponse"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".VoiceHelpActivity"
+            android:label="Voice Assistance Help" />
+        <activity android:name=".FeedbackHolderActivity" />
+        <activity android:name=".ScanQRCodeActivity" />
+        <activity
+            android:name=".NearbyHotelsMapsActivity"
+            android:label="@string/title_activity_nearby_hotels_maps">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.louis.tourismghana.MainActivity" />
+        </activity>
+        <activity android:name=".SearchForSiteActivity" />
+        <activity
+            android:name=".SchedulerActivity"
+            android:label="Schedule A Tour Plan" />
+        <activity
+            android:name=".ReviewsActivity"
+            android:label="Tell Us What You Think?" />
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>

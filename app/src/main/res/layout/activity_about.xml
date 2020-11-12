@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="30dp"
                 android:layout_marginTop="40dp"
                 android:gravity="center"
                 android:text="Hi There!"
@@ -83,6 +83,26 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonVoice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5.0dip"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/microphone"
+                    android:text="VOICE"
+                    android:textColor="@color/colorNavHeader"
+                    android:textSize="12.0sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/layout2"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
@@ -99,7 +119,6 @@
                     android:text="SCAN SITE CODE"
                     android:textColor="@color/colorNavHeader"
                     android:textSize="12.0sp" />
-
             </LinearLayout>
 
             <LinearLayout

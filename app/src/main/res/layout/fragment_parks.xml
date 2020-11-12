@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ProgressBar
+            android:id="@+id/actionProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:targetApi="lollipop"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sitesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            tools:targetApi="lollipop"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="@dimen/img_height"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_error_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNavHeader"
+            android:textSize="@dimen/slide_title"
+            android:layout_gravity="center_horizontal"
+            android:text="Oh Snap!"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:textAlignment="center"
+            android:text="Something Went Wrong"
+            android:textColor="@color/colorNavHeader"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/goto_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorFAB4"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:text="GO HOME"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sites"
+        android:scaleType="fitEnd"
+        android:elevation="-1dp"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.louis.tourismghana.InfoGhanaActivity">
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_hotels"
+        android:orderInCategory="100"
+        android:title="Accommodation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_review"
+        android:orderInCategory="100"
+        android:title="Add Your Reviews"
+        app:showAsAction="never" />
+</menu>

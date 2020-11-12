@@ -44,7 +44,7 @@
             android:layout_centerHorizontal="true"
             android:elevation="5dp"
             android:fontFamily="casual"
-            android:text="You have no plans at the moment"
+            android:text="You have no tour plans at the moment"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="16sp"

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Tourism Ghana</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="experience_tourism">Experience Ghana</string>
+    <string name="use_voice">Use Voice</string>
+    <string name="title_activity_sections">Region Info</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="about_TourismGhana">............................ \n This mobile app serves as a simple guide for both local and international tourists who would like to know about Ghanaian Tourism and experience the various tourist destinations in the country.</string>
+    <string name="title_activity_info_ghana">Experience Ghana</string>
+    <string name="explore">Explore \n the Ghanaian Regions</string>
+    <string name="toursit_site_categories">Site Categories</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="nextbtn">Next</string>
+    <string name="skipbtn">Skip</string>
+
+    <string name="zoo">Have fun observing animals in a controlled version of their natural habitats</string>
+    <string name="rivers">Check out some natural and artificial water bodies in this region</string>
+    <string name="parks">Their beauty will leave you with the urge of coming back for more</string>
+    <string name="museums">Experience a grand tour within the different museums in this region</string>
+    <string name="forts">Take a tour around the historical forts built by the colonial masters</string>
+    <string name="beaches">Have the freedom to relax and chill out on these awesome beaches</string>
+    <string name="castles">Take a tour around the historical castles built by the colonial masters</string>
+    <string name="rivers1">Be intrigued at the very sight of these natural water formations within this region</string>
+    <string name="wildlife">Have fun observing both wild and friendly animals in their natural habitats</string>
+    <string name="monuments">Visit the many historical structures that this region has to offer</string>
+    <string name="mountains">Visit these majestic landforms and maybe challenge yourself to the height</string>
+    <string name="facts">Facts about Ghana</string>
+    <string name="ghanaian_history">Ghanaian History</string>
+    <string name="ghanaian_symbols">Ghanaian Symbols</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_final_ghana_info">FinalGhanaInfoActivity</string>
+    <string name="title_activity_final_site_page">Site Info</string>
+    <string name="title_activity_site_map">Map of Site</string>
+    <string name="title_activity_nearby_hotels_maps">Hotels Close To You</string>
+</resources>

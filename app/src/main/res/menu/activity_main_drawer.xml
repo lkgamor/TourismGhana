@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_regions"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item android:title=""
+            android:checkable="false"
+            android:enabled="false" />
+        <item
+            android:id="@+id/nav_scheduler"
+            android:icon="@drawable/ic_alarm_black_24dp"
+            android:title="Tour Scheduler" />
+        <item android:title=""
+            android:enabled="false"
+            android:checkable="false" />
+        <item
+            android:id="@+id/nav_reviews"
+            android:icon="@drawable/ic_move_to_inbox_black_24dp"
+            android:title="App Reviews" />
+        <item android:title=""
+            android:enabled="false"
+            android:checkable="false" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About App"/>
+    </group>
+</menu>
